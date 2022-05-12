@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/" method="GET">
+        <label for="name1"></label>
+        <input type="text" id="name1" placeholder="name">
+        <label for="email"></label>
+        <input type="email" name="eamil" id="email" placeholder="Email" >
+        <label for="password"></label>
+        <input type="password" name="pass" id="password" placeholder="Password" maxlength="10" minlength="5"  >
+        <!--         
+        - name, email and password required
+        - age, phone, birthdate, gender(M, F), country(Brazil, Canada, Japan, Turkey), picture, Terms and Conditions, Newsletter not required
+        - reset and submit buttons
+        -->
+                <button type="reset">Reset</button>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        <div id="results">
+            <div class="name" id="r-name"></div>
+            <div class="email" id="r-eamil"></div>
+            <div class="pasw" id="r-pasw"></div>
+        <!--   Name: John -->
+        <!--   All fields added -->
+        </div>
+    <script src="./index.js"></script>
+</body>
+</html>
